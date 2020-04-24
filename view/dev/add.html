@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP开发者平台</title>
+    <link rel="stylesheet" href="../../layui/css/layui.css">
+</head>
+<body>
+<div style="width: 400px;margin: 50px auto;">
+    <form class="layui-form layui-form-pane1" action="" lay-filter="first">
+        <div class="layui-form-item">
+            <label class="layui-form-label">软件名称</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="softwareName" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">APK名称</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="aPKName" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">支持ORM</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="supportROM" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">界面语言</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="interfaceLanguage" lay-verify="required" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">软件大小</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="softwareSize" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">下载次数</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="downloads" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+
+            <label class="layui-form-label">所属平台</label>
+
+            <div class="layui-input-inline">
+                <select name="flatformId" id="flatformId" lay-verify="required" lay-filter="flatformId">
+                    <option></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">一级分类</label>
+
+            <div class="layui-input-inline">
+                <select name="categoryLevel1" id="categoryLevel1" lay-verify="required"
+                        lay-filter="categoryLevel1">
+                    <option></option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">二级分类</label>
+
+            <div class="layui-input-inline">
+                <select name="categoryLevel2" id="categoryLevel2" lay-verify="required"
+                        lay-filter="categoryLevel2">
+                    <option></option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">三级分类</label>
+
+            <div class="layui-input-inline">
+                <select name="categoryLevel3" id="categoryLevel3" lay-verify="required"
+                        lay-filter="categoryLevel3">
+                    <option></option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">APP状态</label>
+
+            <div class="layui-input-inline">
+                <select name="status" id="status" disabled lay-verify="required" lay-filter="status">
+                    <option></option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">应用简介</label>
+
+            <div class="layui-input-inline">
+                <textarea type="text" name="appInfo" lay-verify="required" autocomplete="off"
+                          class="layui-input"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">LOGO图片</label>
+            <input type="hidden" id="logoPicPath" name="logoPicPath" value=""/>
+
+            <div class="layui-upload-drag" id="uploadDemo">
+                <i class="layui-icon"></i>
+                <img id="imgPhoto">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button id="commit" class="layui-btn search-btn" lay-submit lay-filter="*">保存</button>
+                <button type="button" id="back" class="layui-btn">返回</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="../../layui/layui.js"></script>
+<script src="../../js/interceptor.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/dev/add.js"></script>
+</body>
+</html>
